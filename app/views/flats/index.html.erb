@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>Flats</h1>
+  <% @flats.each do |flat_hash| %>
+      <div class="card-trip">
+      <img src="<%= flat_hash["imageUrl"] %>" />
+      <div class="card-trip-infos">
+        <div>
+          <h2><%= flat_hash["name"] %></h2>
+        </div>
+        <h2 class="card-trip-pricing">£<%= flat_hash["price"] %>
+        </h2>
+      </div>
+      <%= link_to "", flat_path(flat_hash["id"]), class: "card-trip-link" %>
+    </div>
+  <% end %>
+</div>

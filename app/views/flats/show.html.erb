@@ -1,0 +1,11 @@
+<div class="container">
+  <h1><%= @flat["name"] %></h1>
+  <img src="<%= @flat["imageUrl"] %>" width="300px" />
+
+
+  <p>
+    <%= link_to flats_path do %>
+      <i class="fa-solid fa-house"></i>
+    <% end %>
+  </p>
+</div>
